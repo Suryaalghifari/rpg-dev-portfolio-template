@@ -1,36 +1,57 @@
-# ⚔️ 16-Bit RPG Developer Portfolio Template
+# 16-Bit RPG Developer Portfolio Template
 
-> **Live Demo**: [uyasky.web.id](https://uyasky.web.id)  
-> **Created by**: [Suryaalghifari](https://github.com/Suryaalghifari)
+> **Demo**: [profile.uyasky.web.id](https://profile.uyasky.web.id) • **Created by**: [Suryaalghifari](https://github.com/Suryaalghifari) • **License**: MIT
 
-A static, proof-based developer portfolio with a retro **16-bit isometric RPG aesthetic**, built with **Vite + React 18 + TypeScript + Tailwind CSS**.
+A static, proof-based developer portfolio with a 16-bit isometric RPG aesthetic. Built with **Vite + React 18 + TypeScript + Tailwind CSS**.
 
-Designed to showcase real engineering impact through a "Problem - Role - Result" case study model rather than vague claims. Zero backend, zero database, 100% client-side privacy, and lightning-fast edge delivery.
+Designed to present engineering accomplishments through a structured **Problem - Role - Result** case study format instead of unverified lists. 100% client-side, zero backend database, zero heavy WebGL dependencies, and pre-configured for free Cloudflare Pages edge hosting.
 
----
-
-## ✨ Features
-
-- **🎮 3D Voxel Stage**: Pure CSS 3D isometric island with interactive buildings that respond to scroll and click navigation (zero heavy WebGL or Three.js dependencies).
-- **📜 Proof-Based Projects**: Showcase projects with structured Problem, Role, and Measurable Results, complete with a keyboard-navigable Lightbox gallery.
-- **🛡️ Interactive Skill Matrix**: Filter projects by tech stack (`#docker`, `#react`, `#python`) with automatic URL query sync (`?skill=docker`).
-- **💬 NPC Dialogue Box**: Character avatar with an interactive FAQ conversation system.
-- **⚡ 100% AI Agent Ready**: Out-of-the-box instructions for **Hermes Agent**, **Claude Code**, **Cursor**, **Windsurf**, and **Antigravity**.
-- **🔒 Production Edge Hardened**: Pre-configured Cloudflare Pages security headers (`_headers`) with strict CSP, HSTS, and frame protection.
+![16-Bit Isometric RPG Hero Stage](docs/screenshots/hero-isometric-scene.png)
 
 ---
 
-## 🚀 Quick Start (1 Minute)
+## Key Features
+
+### Pure CSS 3D Isometric Island
+Interactive 3D voxel stage rendered entirely with pure CSS transforms and DOM elements. Features smoke particle loops, camera tilt, and interactive guild buildings that synchronize with scroll spy and keyboard navigation.
+
+### Proof-Based Project Showcase (Quest Log)
+Project presentation focused on measurable impact. Includes problem statement, specific technical role, quantified outcome, skill tag filters, and a keyboard-accessible Lightbox gallery.
+
+![Project Quest Log Showcase](docs/screenshots/project-quest-log.png)
+
+### Dynamic Skill Matrix & URL Query Filtering
+Inventory-style skill slots categorized by proficiency rank (`Harian`, `Produksi`, `Pernah coba`). Clicking any skill filters displayed projects dynamically and syncs with URL parameters (`?skill=docker`).
+
+![Skill Matrix and Filtering](docs/screenshots/skills-matrix-filter.png)
+
+### Character Sheet & Interactive NPC Dialogue
+Retro dialogue interface with an animated avatar sprite. Visitors can click through FAQ questions to read background history, core stats, and career journey.
+
+![NPC Dialogue Interface](docs/screenshots/npc-dialogue-about.png)
+
+### Universal AI Agent Ready
+Pre-configured instructions allow coding agents to personalize this entire portfolio from your resume or notes in one command:
+- **Hermes Agent**: Built-in `SKILL.md` (`rpg-portfolio-scaffold`)
+- **Claude Code**: Structured `CLAUDE.md` context
+- **Cursor / Windsurf / Antigravity**: Scoped `.cursorrules` guidelines
+
+### Production Edge Security
+Includes pre-hardened Cloudflare Pages headers (`public/_headers`) with strict Content Security Policy (CSP), HSTS, and frame protection.
+
+---
+
+## Quick Start
 
 ```bash
 # 1. Clone repository
-git clone https://github.com/Suryaalghifari/rpg-dev-portfolio-template.git my-rpg-portfolio
-cd my-rpg-portfolio
+git clone https://github.com/Suryaalghifari/rpg-dev-portfolio-template.git my-portfolio
+cd my-portfolio
 
 # 2. Install dependencies
 npm install
 
-# 3. Start local development
+# 3. Start local development server
 npm run dev
 ```
 
@@ -38,59 +59,57 @@ Open `http://localhost:5173` in your browser.
 
 ---
 
-## 🤖 Customize with AI Agents (Hermes, Claude, Cursor)
+## Personalize with AI Agents
 
-You don't need to write code manually. Simply feed this repo to your AI of choice:
+Feed this repository directly to your AI agent of choice to populate your data automatically:
 
-### A. Using Hermes Agent
-This repo includes `SKILL.md`. In your Hermes terminal:
+### Hermes Agent
 ```text
-hermes: "Use rpg-portfolio-scaffold to customize this portfolio with my background: [your bio, projects, and skills]"
+hermes: "Use rpg-portfolio-scaffold to customize this portfolio with my background: [paste your resume or bio]"
 ```
 
-### B. Using Claude Code
-Claude Code automatically picks up `CLAUDE.md`:
+### Claude Code
 ```text
-claude: "Update this portfolio to match my career: [paste your resume / LinkedIn summary]"
+claude: "Update this portfolio with my career background: [paste your resume or LinkedIn profile]"
 ```
 
-### C. Using Cursor / Windsurf / Antigravity
-The `.cursorrules` file instructs the agent to edit `src/data/*.json` and format images cleanly without breaking the RPG theme.
+### Cursor / Windsurf / Antigravity
+The included `.cursorrules` guides the model to update JSON records and preserve the 16-bit design tokens.
 
 ---
 
-## 🛠 Manual Customization (Just 3 JSON Files)
+## Manual Customization
 
-All content is cleanly decoupled into 3 files in `src/data/`:
+All portfolio content is separated into 3 configuration files in `src/data/`:
 
-| File | What to Customize |
+| File | Content |
 |---|---|
-| `src/data/about.json` | Name, title, NPC dialogue questions/answers, stats, and work experience. |
-| `src/data/projects.json` | Featured and archived projects with Problem - Role - Result and screenshots. |
-| `src/data/skills.json` | Tech stack, proficiency ranks (`Harian`, `Produksi`, `Pernah coba`), and icons. |
+| `src/data/about.json` | Name, title, NPC dialogue questions/answers, stats, and employment history. |
+| `src/data/projects.json` | Featured and archived projects with Problem - Role - Result details and screenshots. |
+| `src/data/skills.json` | Tech stack inventory, proficiency rankings, and icons. |
 
 ### Adding Project Screenshots
-Place 16:9 images (recommended size: `1200x675`, format: `WebP`) into `public/images/projects/` and reference them in `projects.json`.
+Place 16:9 images (recommended size: `1200x675`, format: `WebP`) into `public/images/projects/` and reference their file paths in `src/data/projects.json`.
 
 ---
 
-## 🚢 Deploy to Cloudflare Pages (Free)
+## Deployment (Cloudflare Pages)
 
 ```bash
-# Build static bundle
+# 1. Build production static bundle
 npm run build
 
-# Deploy directly via Wrangler
+# 2. Deploy directly via Wrangler CLI
 npx wrangler pages deploy dist --project-name my-rpg-portfolio
 ```
 
-Or connect the repository directly in the **Cloudflare Dashboard → Workers & Pages → Create Application → Pages → Connect to Git**.
+Alternatively, connect your repository directly in **Cloudflare Dashboard → Workers & Pages → Create Application → Pages → Connect to Git**.
 
 ---
 
-## 📄 License & Credits
+## License & Credits
 
 Distributed under the **MIT License**.
 
 - Created by **[Suryaalghifari](https://github.com/Suryaalghifari)**
-- If you like this template, give it a ⭐️ on GitHub!
+- If you find this template useful, please star the repository on GitHub.
