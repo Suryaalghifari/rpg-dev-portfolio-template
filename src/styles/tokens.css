@@ -1,0 +1,140 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --ink: #1a0f08;
+  --wood: #2c1b10;
+  --wood2: #4a2e1b;
+  --wood3: #6a4428;
+  --gold: #ffd98a;
+  --cream: #f8f4e1;
+  --meta: #c4b69c;
+  --mint: #74c69d;
+  --coral: #e76f51;
+  --moss: #365314;
+  --sky-text: #cfe3e8;
+  --sky-1: #0f2a3f;
+  --sky-2: #16405a;
+  --sky-3: #1f5a6e;
+
+  --border: 4px solid var(--ink);
+  --shadow-panel: inset 0 0 0 4px var(--wood2), 0 4px 0 var(--ink);
+  --shadow-btn: inset 3px 3px 0 var(--wood3), inset -3px -3px 0 var(--wood);
+
+  --font-head: 'Silkscreen', 'Courier New', monospace;
+  --font-body: 'VT323', ui-monospace, Menlo, monospace;
+  color-scheme: dark;
+}
+
+body {
+  margin: 0;
+  background: linear-gradient(
+    180deg,
+    #0f2a3f 0%,
+    #0f2a3f 30%,
+    #16405a 30%,
+    #16405a 60%,
+    #1f5a6e 60%,
+    #1f5a6e 100%
+  ) fixed;
+  color: var(--cream);
+  font-family: var(--font-body);
+  font-size: 22px;
+  line-height: 1.25;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Panel */
+.panel {
+  background: var(--wood);
+  border: 4px solid var(--ink);
+  box-shadow: inset 0 0 0 4px var(--wood2), 0 4px 0 var(--ink);
+}
+
+/* Button */
+.btn {
+  font-family: var(--font-head);
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--cream);
+  text-decoration: none;
+  background: var(--wood2);
+  border: 4px solid var(--ink);
+  box-shadow: inset 3px 3px 0 var(--wood3), inset -3px -3px 0 var(--wood);
+  padding: 10px 12px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: transform 0.1s steps(2);
+  min-height: 44px;
+  box-sizing: border-box;
+}
+
+.btn:hover,
+.btn:focus-visible {
+  color: var(--gold);
+  border-color: var(--gold);
+  outline: none;
+}
+
+.btn:active {
+  transform: translateY(2px);
+  box-shadow: inset -3px -3px 0 var(--wood3), inset 3px 3px 0 var(--wood);
+}
+
+.btn.on {
+  color: var(--gold);
+  border-color: var(--gold);
+}
+
+/* Card */
+.card {
+  padding: 20px 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  transition: transform 0.1s steps(2);
+}
+
+.card:hover {
+  transform: translateY(-2px);
+}
+
+.card.dim {
+  opacity: 0.35;
+}
+
+/* Badge */
+.badge {
+  font-family: var(--font-head);
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 2px 6px;
+  border: 2px solid var(--ink);
+  display: inline-block;
+}
+
+.badge-active {
+  background: var(--moss);
+  color: var(--cream);
+}
+
+.badge-done {
+  background: var(--wood3);
+  color: var(--cream);
+}
+
+/* Tag */
+.tag {
+  font-family: var(--font-body);
+  font-size: 18px;
+  color: var(--mint);
+  background: var(--ink);
+  border: 2px solid var(--wood3);
+  padding: 2px 8px;
+  display: inline-block;
+}

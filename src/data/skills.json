@@ -1,0 +1,18 @@
+[
+  { "id": "docker", "name": "Docker", "rank": "Harian", "icon": "SiDocker" },
+  { "id": "linux", "name": "Linux", "rank": "Harian", "icon": "SiLinux" },
+  { "id": "laravel", "name": "Laravel", "rank": "Harian", "icon": "SiLaravel" },
+  { "id": "vue", "name": "Vue 3", "rank": "Harian", "icon": "SiVuedotjs" },
+  { "id": "typescript", "name": "TypeScript", "rank": "Harian", "icon": "SiTypescript" },
+  { "id": "react", "name": "React", "rank": "Harian", "icon": "SiReact" },
+  { "id": "tailwindcss", "name": "Tailwind", "rank": "Harian", "icon": "SiTailwindcss" },
+  { "id": "python", "name": "Python & FastAPI", "rank": "Produksi", "icon": "SiPython" },
+  { "id": "nuxt", "name": "Nuxt 3", "rank": "Produksi", "icon": "SiNuxt" },
+  { "id": "postgresql", "name": "PostgreSQL", "rank": "Produksi", "icon": "SiPostgresql" },
+  { "id": "mysql", "name": "MySQL", "rank": "Produksi", "icon": "SiMysql" },
+  { "id": "redis", "name": "Redis Queue", "rank": "Produksi", "icon": "SiRedis" },
+  { "id": "kubernetes", "name": "Kubernetes", "rank": "Produksi", "icon": "SiKubernetes" },
+  { "id": "nginx", "name": "Nginx", "rank": "Produksi", "icon": "SiNginx" },
+  { "id": "prometheus", "name": "Prometheus & Grafana", "rank": "Produksi", "icon": "SiPrometheus" },
+  { "id": "nextjs", "name": "Next.js", "rank": "Pernah coba", "icon": "SiNextdotjs" }
+]

@@ -1,0 +1,16 @@
+# 16-Bit RPG Developer Portfolio Rules (Cursor / Windsurf / Antigravity)
+
+You are assisting a developer in customizing their static 16-bit RPG developer portfolio.
+
+## Core Rules:
+1. When asked to customize or add portfolio data, ONLY modify:
+   - `src/data/about.json` for bio, stats, and work experience.
+   - `src/data/projects.json` for projects (ensure every project has Problem - Role - Result).
+   - `src/data/skills.json` for technical skills and Simple Icons mapping.
+   - `public/images/projects/` for project screenshot images.
+2. Maintain the 16-bit RPG aesthetic:
+   - Headers use font Silkscreen (`font-head`).
+   - Body text uses font VT323 (`font-body`).
+   - Do NOT introduce generic corporate modern styles or heavy rounded corners.
+3. Screenshots must be 16:9 ratio (1200x675) WebP format to prevent layout shifting.
+4. Always verify with `npm run build` after editing data files.

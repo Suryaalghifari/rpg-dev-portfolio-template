@@ -1,0 +1,43 @@
+{
+  "name": "yourname",
+  "subtitle": "Software Engineer & System Architect • Guild Adventurer",
+  "avatar": "/images/avatar.webp",
+  "options": [
+    {
+      "id": "who",
+      "question": "Siapa kamu?",
+      "answer": "Software Engineer yang menyukai rekayasa sistem terdistribusi, arsitektur frontend modern, dan otomasi infrastruktur cloud."
+    },
+    {
+      "id": "what",
+      "question": "Apa yang kamu bangun?",
+      "answer": "Aplikasi web fullstack performa tinggi, pipeline pemrosesan data real-time, dan perkakas developer yang andal."
+    },
+    {
+      "id": "looking",
+      "question": "Kamu cari apa sekarang?",
+      "answer": "Tantangan rekayasa baru untuk membangun sistem skalabel, berorientasi hasil terukur, dan berdampak nyata bagi pengguna."
+    }
+  ],
+  "stats": [
+    { "label": "Tahun Pengalaman", "value": "3+" },
+    { "label": "Proyek Produksi", "value": "10+" },
+    { "label": "Uptime Sistem", "value": "99.9%" }
+  ],
+  "experience": [
+    {
+      "company": "Tech Corp Indonesia",
+      "role": "Senior Software Engineer",
+      "period": "2024 – Sekarang",
+      "location": "Jakarta, Indonesia",
+      "summary": "Mengembangkan layanan mikro berbasis cloud, mengoptimasi latensi API hingga 40%, dan memimpin implementasi pipeline CI/CD otomatis."
+    },
+    {
+      "company": "Digital Media Nusantara",
+      "role": "Fullstack Web Developer",
+      "period": "2022 – 2024",
+      "location": "Bandung, Indonesia",
+      "summary": "Membangun dashboard analitik interaktif, mereduksi waktu muat halaman dari 3.2 detik menjadi 0.8 detik, serta mengelola basis data relasional."
+    }
+  ]
+}

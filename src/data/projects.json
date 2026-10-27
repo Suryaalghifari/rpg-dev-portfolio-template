@@ -1,0 +1,62 @@
+[
+  {
+    "slug": "quest-log-dashboard",
+    "title": "Quest Log & Adventure Dashboard",
+    "status": "SELESAI",
+    "featured": true,
+    "problem": "Tim engineering kesulitan memantau progress sprint mingguan dan dependensi tugas antar divisi tanpa visualisasi yang intuitif.",
+    "role": "Fullstack Developer merancang frontend interaktif React 18, backend Node.js, dan skema basis data PostgreSQL.",
+    "result": "Meningkatkan transparansi tim 35%, menyelesaikan 150+ tiket kerja tepat waktu, dan latensi API rata-rata di bawah 80ms.",
+    "skills": ["react", "typescript", "tailwindcss", "docker"],
+    "shots": [
+      {
+        "src": "/images/projects/quest-log-dashboard.webp",
+        "alt": "Tangkapan layar antarmuka dashboard manajemen tugas RPG",
+        "caption": "Dashboard Utama: Metrik sprint, daftar quest, dan status tim",
+        "w": 1200,
+        "h": 675
+      }
+    ],
+    "year": 2026
+  },
+  {
+    "slug": "cloud-citadel-infrastructure",
+    "title": "Cloud Citadel Platform",
+    "status": "SELESAI",
+    "featured": true,
+    "problem": "Deployment multi-layanan rawan downtime akibat konfigurasi server manual dan ketiadaan observabilitas metrik terpusat.",
+    "role": "DevOps Engineer mengotomasi infrastruktur kontainer Kubernetes, pipeline CI/CD GitHub Actions, dan dashboard Prometheus.",
+    "result": "Mencapai uptime 99.95%, memangkas siklus rilis dari 45 menit menjadi 6 menit, serta alert proaktif nol false-positive.",
+    "skills": ["docker", "kubernetes", "linux", "python"],
+    "shots": [
+      {
+        "src": "/images/projects/cloud-citadel-cluster.webp",
+        "alt": "Tangkapan layar arsitektur kluster dan dashboard monitoring",
+        "caption": "Observabilitas: Pemantauan node cluster, CPU/RAM, dan traffic edge",
+        "w": 1200,
+        "h": 675
+      }
+    ],
+    "year": 2026
+  },
+  {
+    "slug": "pixel-forge-engine",
+    "title": "Pixel Forge Engine & Studio",
+    "status": "SELESAI",
+    "featured": true,
+    "problem": "Desainer indie game membutuhkan perkakas kanvas piksel ringan yang dapat berjalan langsung di peramban tanpa instalasi perangkat lunak berat.",
+    "role": "Frontend Graphics Engineer mengembangkan editor kanvas WebGL/HTML5 berbasis TypeScript murni.",
+    "result": "Mendukung ekspor multi-layer WebP/PNG, render stabil pada 60 FPS, dan digunakan oleh 2.000+ kreator piksel.",
+    "skills": ["typescript", "react", "tailwindcss"],
+    "shots": [
+      {
+        "src": "/images/projects/pixel-canvas-studio.webp",
+        "alt": "Tangkapan layar kanvas studio gambar piksel",
+        "caption": "Kanvas Editor: Palet warna retro, layer manager, dan ekspor instan",
+        "w": 1200,
+        "h": 675
+      }
+    ],
+    "year": 2025
+  }
+]
